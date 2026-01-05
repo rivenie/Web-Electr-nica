@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Web Profesional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Franja naranja superior -->
+    <div class="top-bar">
+      <div class="container top-content">
+        <div class="contact-info">
+          <a
+            href="https://maps.google.com/?q=Avenida+Metropolitana+940+Comas+Lima+Perú"
+            target="_blank"
+          >
+            <span
+              ><i class="fas fa-map-marker-alt"></i> Avenida Metropolitana 940 –
+              Comas</span
+            >
+          </a>
+          <a href="mailto:comercial@grucord.com.pe">
+            <span
+              ><i class="fas fa-envelope"></i> comercial@grucord.com.pe</span
+            >
+          </a>
+          <a href="https://wa.me/51908837103" target="_blank">
+            <span><i class="fab fa-whatsapp"></i> 908 837 103</span>
+          </a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header con logo y menú -->
+    <header class="header" id="inicio">
+      <div class="container header-content">
+        <div class="logo-placeholder"><img src="images/logoB.jpg" /></div>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+      </div>
+    </header>
+
+    <!-- Carrusel -->
+    <section class="carousel">
+      <div
+        class="carousel-slide active"
+        style="
+          background-image: url('images/por1.jpeg');
+        "
+      >
+        <div class="slide-content">
+          <h1>Servicios de Sistemas de Aire Acondicionado</h1>
+          <p>
+            Especialistas en sistemas HVAC, eléctricos, TI y seguridad
+            electrónica. Más de 10 años de experiencia garantizando calidad y
+            eficiencia en cada proyecto.
+          </p>
+        </div>
+      </div>
+      <div
+        class="carousel-slide"
+        style="background-image: url('images/por2.jpeg')"
+      >
+        <div class="slide-content">
+          <h1>Instalación de Equipos de Aire Acondicionado</h1>
+          <p>
+            Diseño, instalación y mantenimiento de sistemas de climatización,
+            ventilación y refrigeración industrial para óptimo rendimiento
+            energético.
+          </p>
+        </div>
+      </div>
+      <div
+        class="carousel-slide"
+        style="background-image: url('images/por3.jpeg')"
+      >
+        <div class="slide-content">
+          <h1>Mantenimiento de Equipos de Aire Acondicionado</h1>
+          <p>
+            Soluciones eléctricas integrales e infraestructura tecnológica que
+            aseguran continuidad operativa y máxima seguridad para tu negocio.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <div class="carousel-dot active" data-index="0"></div>
+        <div class="carousel-dot" data-index="1"></div>
+        <div class="carousel-dot" data-index="2"></div>
+      </div>
+    </section>
+
+    <!--Carrusel Clientes-->
+    <section class="brands-section">
+      <div class="container">
+        <h2 class="section-title">Trabajamos con</h2>
+        <div class="brands-carousel">
+          <button class="carousel-prev">‹</button>
+
+          <div class="carousel-track-container">
+            <div class="carousel-track">
+              <div class="brand-slide">
+                <img src="images/cli1.png" alt="Cliente 1" />
+              </div>
+              <div class="brand-slide">
+                <img src="images/cli2.png" alt="Cliente 2" />
+              </div>
+              <div class="brand-slide">
+                <img src="images/cli3.png" alt="Cliente 3" />
+              </div>
+              <div class="brand-slide">
+                <img src="images/cli4.png" alt="Cliente 4" />
+              </div>
+              <div class="brand-slide">
+                <img src="images/cli5.png" alt="Cliente 5" />
+              </div>
+              <div class="brand-slide">
+                <img src="images/cli6.png" alt="Cliente 6" />
+              </div>
+              <div class="brand-slide">
+                <img src="images/cli7.png" alt="Cliente 7" />
+              </div>
+              <div class="brand-slide">
+                <img src="images/cli8.png" alt="Cliente 8" />
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section class="about-section" id="nosotros">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-left">
+            <div class="section-title">
+              <h2>Nosotros</h2>
+              <div class="title-line"></div>
+            </div>
+            <h3 class="about-title">Soluciones que Transforman</h3>
+            <p class="about-text">
+              En GRUPO GRUCORD nos enorgullecemos de ser su aliado estratégico y
+              confiable en el desarrollo y ejecución de proyectos de ingeniería.
+              Nuestra misión es brindar servicios de la más alta calidad,
+              superando consistentemente los estándares y las expectativas de
+              nuestros clientes. Estamos comprometidos a ser su socio ideal,
+              ofreciendo soluciones de ingeniería integrales y personalizadas
+              para cada necesidad
+            </p>
+
+            <div class="accordion">
+              <div class="accordion-item active">
+                <div class="accordion-header">
+                  <span>Misión</span>
+                  <span class="accordion-icon"
+                    ><i class="fas fa-chevron-down"></i
+                  ></span>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Ser el aliado estratégico líder en soluciones integrales de
+                    ingeniería, brindando servicios de la más alta calidad que
+                    superen las expectativas de nuestros clientes, optimicen sus
+                    operaciones y contribuyan al desarrollo sostenible de cada
+                    proyecto.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Visión</span>
+                  <span class="accordion-icon"
+                    ><i class="fas fa-chevron-down"></i
+                  ></span>
+                </div>
+                <div class="accordion-content">
+                  <p>
+                    Posicionarnos como referentes en innovación tecnológica e
+                    ingeniería en Perú, siendo reconocidos por nuestra
+                    excelencia, confiabilidad y compromiso en la transformación
+                    digital y eficiencia energética de las empresas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="image-placeholder" style="height: 400px">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1722945652527-d8d7ba9fd0d5?q=80&w=935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Servicios con fondo -->
+    <section class="services-banner" id="servicios">
+      <div class="container services-banner-content">
+        <div>
+          <h2>NUESTROS SERVICIOS</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de 4 servicios -->
+    <section class="services-section">
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-img">
+              <div class="image-placeholder">
+                <img src="images/aireAcondicionado.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Sistemas HVAC</h3>
+              <ul class="service-list">
+                <li>
+                  Servicio de instalación, mantenimiento preventivo y reparación
+                  de equipos de aire acondicionado:
+                </li>
+              </ul>
+              <ul class="services-list">
+                <li>Tipo Split, Piso Techo, cassette, Fan coil.</li>
+                <li>Sistemas VRV o VRF.</li>
+                <li>Sistema refrigeración con agua helada Chiller.</li>
+                <li>Torres de enfriamiento.</li>
+                <li>Sistemas de Ventilación mecánica.</li>
+                <li>Refrigeración comercial e industrial.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-img">
+              <div class="image-placeholder">
+                <img src="images/sistemasTI.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Sistemas TI</h3>
+              <ul class="service-list">
+                <li>
+                  Soporte, mantenimiento preventivo y reparación de equipos
+                  informáticos:
+                </li>
+              </ul>
+              <ul class="services-list">
+                <li>Desktop, laptop, Workstation.</li>
+                <li>Impresoras led, láser y tinta.</li>
+                <li>Escáner de producción.</li>
+                <li>Proyectos multimedia.</li>
+                <li>Servidores, switch y gabinete.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-img">
+              <div class="image-placeholder">
+                <img src="images/sistemasElectricos.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Sistemas eléctricos</h3>
+              <ul class="service-list">
+                <li>
+                  Instalación, mantenimiento preventivo y reparación de sistemas
+                  eléctricos:
+                </li>
+              </ul>
+              <ul class="services-list">
+                <li>Puntos tomacorrientes y luminarias.</li>
+                <li>Tableros eléctricos doméstico, comercial e industrial.</li>
+                <li>Sistema de Puesta a Tierra (SPAT).</li>
+                <li>Equipos de Sistemas de Alimentación Interrumpida (UPS), incluido banco de baterías.</li>
+                <li>Transformadores de aislamiento.</li>
+                <li>Grupos electrógenos.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-img">
+              <div class="image-placeholder">
+                <img src="images/seguridadElectronica.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Sistemas redes y seguridad electrónica</h3>
+              <ul class="service-list">
+                <li>Instalación, mantenimiento y reparación de:</li>                
+              </ul>
+              <ul class="services-list">
+                <li>Cableado estructurado de red.</li>    
+                <li>Sistema Circuito Cerrado Televisión ( CCTV).</li>
+                <li>Sistema de detección y alarma de incendios (ACI y DACI)</li>
+                <li>Sistema de Control de acceso.</li>
+                <li>Sensores perimetrales.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección título grande -->
+    <section class="title-section">
+      <div class="container">
+        <h2>Compromiso Total con Nuestros Clientes</h2>
+        <p>
+          En GRUPO GRUCORD S.A.C. nos dedicamos a entender las necesidades
+          específicas de cada proyecto, brindando soluciones personalizadas que
+          combinan tecnología de punta, experiencia técnica y un servicio al
+          cliente excepcional para garantizar resultados óptimos y sostenibles.
+        </p>
+
+        <!-- Logos de clientes -->
+        <div class="clients-logos">
+          <div class="client-logo">
+            <img src="images/c1.png" alt="Cliente 1" />
+          </div>
+          <div class="client-logo">
+            <img src="images/c2.png" alt="Cliente 2" />
+          </div>
+          <div class="client-logo">
+            <img src="images/c3.png" alt="Cliente 3" />
+          </div>
+          <div class="client-logo">
+            <img src="images/c4.png" alt="Cliente 3" />
+          </div>
+          <div class="client-logo">
+            <img src="images/c5.png" alt="Cliente 3" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección formulario -->
+    <section class="contact-section">
+      <div class="container contact-container">
+        <div class="contact-content">
+          <div class="contact-left">
+            <h2>Envíanos un mensaje</h2>
+            <p>
+              Completa el formulario y nuestro equipo se comunicará contigo en
+              menos de 24 horas para evaluar tus necesidades y ofrecerte la
+              mejor solución personalizada.
+            </p>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Nombre"
+                required
+              />
+              <input
+                type="tel"
+                id="phone"
+                class="form-control"
+                placeholder="Celular"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Correo"
+                required
+              />
+
+              <select id="service" class="form-control" required>
+                <option value="" disabled selected>
+                  Seleccione un servicio
+                </option>
+                <option value="instalacion">
+                  Instalación Aire Acondicionado
+                </option>
+                <option value="mantenimiento">Mantenimiento</option>
+              </select>
+
+              <select id="district" class="form-control" required>
+                <option value="" disabled selected>Distrito</option>
+                <option value="ancón">Ancón</option>
+                <option value="ate">Ate</option>
+                <option value="barranco">Barranco</option>
+                <option value="breña">Breña</option>
+                <option value="carabayllo">Carabayllo</option>
+                <option value="chaclacayo">Chaclacayo</option>
+                <option value="chorrillos">Chorrillos</option>
+                <option value="cieneguilla">Cieneguilla</option>
+                <option value="comas">Comas</option>
+                <option value="el_agustino">El Agustino</option>
+                <option value="independencia">Independencia</option>
+                <option value="jesus_maria">Jesús María</option>
+                <option value="la_molina">La Molina</option>
+                <option value="la_victoria">La Victoria</option>
+                <option value="lince">Lince</option>
+                <option value="los_olivos">Los Olivos</option>
+                <option value="lurigancho">Lurigancho</option>
+                <option value="lurin">Lurín</option>
+                <option value="magdalena">Magdalena del Mar</option>
+                <option value="miraflores">Miraflores</option>
+                <option value="pachacamac">Pachacámac</option>
+                <option value="pucusana">Pucusana</option>
+                <option value="pueblo_libre">Pueblo Libre</option>
+                <option value="puente_piedra">Puente Piedra</option>
+                <option value="punta_hermosa">Punta Hermosa</option>
+                <option value="punta_negrita">Punta Negrita</option>
+                <option value="rimac">Rímac</option>
+                <option value="san_bartolo">San Bartolo</option>
+                <option value="san_borja">San Borja</option>
+                <option value="san_isidro">San Isidro</option>
+                <option value="san_juan_de_lurigancho">
+                  San Juan de Lurigancho
+                </option>
+                <option value="san_juan_de_miraflores">
+                  San Juan de Miraflores
+                </option>
+                <option value="san_luis">San Luis</option>
+                <option value="san_martin_de_porres">
+                  San Martín de Porres
+                </option>
+                <option value="san_miguel">San Miguel</option>
+                <option value="santa_anita">Santa Anita</option>
+                <option value="santa_maria">Santa María del Mar</option>
+                <option value="santa_rosa">Santa Rosa</option>
+                <option value="santiago_de_surco">Santiago de Surco</option>
+                <option value="surquillo">Surquillo</option>
+                <option value="villa_el_salvador">Villa El Salvador</option>
+                <option value="villa_maria">Villa María del Triunfo</option>
+              </select>
+
+              <textarea
+                id="description"
+                class="form-control"
+                rows="4"
+                placeholder="Descripción del requerimiento"
+                required
+              ></textarea>
+              <button type="submit" class="btn-yellow">ENVIAR</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Sección izquierda: Logo + Redes -->
+          <div class="footer-section">
+            <div class="logo-placeholder" style="margin-bottom: 15px">
+              <img src="images/logo.jpg" />
+            </div>
+            <p style="margin-bottom: 10px; font-weight: bold">Síguenos en:</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Sección centro: Páginas -->
+          <div class="footer-section">
+            <h3>Páginas</h3>
+            <ul class="footer-links">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Sección derecha: Contacto -->
+          <div class="footer-section">
+            <h3>Contáctanos</h3>
+            <div class="contact-info">
+              <p>
+                <a
+                  href="https://maps.google.com/?q=Avenida+Metropolitana+940+Comas+Lima+Perú"
+                  target="_blank"
+                >
+                  <i class="fas fa-map-marker-alt"></i> Avenida Metropolitana
+                  940 – Comas
+                </a>
+              </p>
+              <p>
+                <a href="tel:+51908837103">
+                  <i class="fas fa-phone"></i> 908 837 103
+                </a>
+              </p>
+              <p>
+                <a href="mailto:comercial@grucord.com.pe">
+                  <i class="fas fa-envelope"></i> comercial@grucord.com.pe
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="containerDerechos">
+        <p>&copy; 2025 Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
