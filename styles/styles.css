@@ -43,7 +43,6 @@ body {
 .contact-info a {
     color: white;
     text-decoration: none;
-    margin-right: 20px;
 }
 
 .contact-info i {
@@ -361,9 +360,9 @@ body {
 
 /* Sección Servicios con fondo */
 .services-banner {
-    background-image: url('https://images.unsplash.com/photo-1526665814499-fbdb4394ef3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGVsZWN0cm9uaWN8ZW58MHwwfDB8fHww');
+    background-image: url('https://img.freepik.com/foto-gratis/hombres-que-trabajan-equipo-full-shot_23-2148921408.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,6 +370,7 @@ body {
     color: white;
     position: relative;
     height: 193px;
+    background-repeat: no-repeat;
 }
 
 .services-banner::before {
@@ -556,10 +556,10 @@ body {
     max-width: 48%;
     /* Cambia de 100% a 48% */
     margin-bottom: 0;
-    /* Opcional: quita el margin-bottom */    
+    /* Opcional: quita el margin-bottom */
     background-color: rgba(0, 0, 0, 0.6);
     padding: 30px;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 .contact-left h2 {
@@ -652,6 +652,10 @@ body {
     color: white;
 }
 
+.footer-links {
+    text-align: start;
+}
+
 .footer .container {
     width: 100%;
     max-width: 1200px;
@@ -718,7 +722,7 @@ body {
 .footer-social a {
     color: white;
     font-size: 20px;
-    margin-right: 15px;
+    margin: 0 10px;
 }
 
 .contact-info p {
@@ -729,15 +733,6 @@ body {
 
 .contact-info i {
     width: 15px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-section {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 30px;
-    }
 }
 
 .footer .containerDerechos {
@@ -794,62 +789,262 @@ body {
     width: 100%;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+/* WhatsApp flotante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Animación de latido */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
     }
 
-    .about-left,
-    .about-right,
-    .other-services-left,
-    .other-services-right {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 40px;
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 
-@media (max-width: 768px) {
-    .top-content {
-        flex-direction: column;
-        text-align: center;
+.whatsapp-float {
+    animation: pulse 2s infinite;
+}
+
+
+/* ==============================
+   RESPONSIVE IMPROVEMENTS
+   ============================== */
+
+/* Tablet (768px - 992px) */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 15%;
     }
 
-    .contact-info {
-        margin-bottom: 10px;
+    /* Header */
+    .logo-placeholder img {
+        width: 200px;
     }
 
-    .social-icons {
-        margin-top: 10px;
+    .nav-menu li {
+        margin-left: 20px;
     }
 
-    .header-content {
-        flex-direction: row;
+    .nav-menu a {
+        font-size: 16px;
     }
 
-    .nav-menu {
-        display: none;
-    }
-
-    .mobile-menu-btn {
-        display: block;
-    }
-
+    /* Carrusel principal */
     .carousel {
         height: 300px;
+    }
+
+    .slide-content {
+        padding: 20px;
+        max-width: 90%;
     }
 
     .slide-content h1 {
         font-size: 32px;
     }
-}
 
-@media (max-width: 576px) {
-    .services-grid {
-        grid-template-columns: 1fr;
+    .slide-content p {
+        font-size: 16px;
     }
 
+    /* Carrusel marcas */
+    .brands-carousel {
+        max-width: 100%;
+    }
+
+    .brand-slide {
+        flex: 0 0 110px;
+        height: 50px;
+    }
+
+    /* Sección Nosotros */
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-left,
+    .about-right {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about-right {
+        margin-top: 30px;
+    }
+
+    /* Servicios */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Clientes logos */
+    .clients-logos {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .client-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Formulario */
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-form {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact-left {
+        margin-bottom: 30px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Mobile (576px - 768px) */
+@media (max-width: 768px) {
+    /* Top bar */
+
+    .top-bar {
+        padding: 5px 0;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .top-content {
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+        height: 100%;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 15px;
+        align-items: center;
+    }
+
+    .footer .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: unset;
+    }
+
+    .contact-info a:not([href*="whatsapp"]) span {
+        display: none;
+    }
+
+    /* WhatsApp con texto */
+    .contact-info a[href*="whatsapp"] {
+        gap: 5px;
+    }
+
+    .contact-info a {
+        display: inline-block;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 30px;
+    }
+
+    .social-icons a {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    /* Header */
+    .header-content {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .logo-placeholder img {
+        width: 150px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    /* Carrusel principal */
     .carousel {
         height: 250px;
     }
@@ -859,26 +1054,253 @@ body {
     }
 
     .slide-content p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
+    .carousel-controls {
+        bottom: 10px;
+    }
+
+    /* Carrusel marcas */
+    .brands-carousel {
+        flex-direction: column;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        display: none;
+    }
+
+
+
+    /* Sección Nosotros */
     .section-title h2 {
         font-size: 28px;
     }
 
     .about-title {
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    .about-text {
+        font-size: 14px;
+    }
+
+    /* Servicios banner */
+    .services-banner {
+        height: 150px;
     }
 
     .services-banner-content h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
+    /* Servicios grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        margin-bottom: 20px;
+    }
+
+    /* Título grande */
     .title-section h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
-    .contact-container {
-        padding: 0 20px;
+    .title-section p {
+        font-size: 16px;
     }
+
+    /* Clientes logos */
+    .client-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Formulario */
+    .contact-left h2 {
+        font-size: 24px;
+    }
+
+    .contact-left p {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    /* Footer */
+    .footer .container {
+        padding: 20px;
+    }
+
+    .footer-section h3 {
+        font-size: 18px;
+    }
+
+    .footer-links li {
+        font-size: 14px;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Small Mobile (menos de 576px) */
+@media (max-width: 576px) {
+
+    /* Carrusel principal */
+    .carousel {
+        height: 200px;
+    }
+
+    .slide-content {
+        padding: 15px;
+    }
+
+    .slide-content h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .slide-content p {
+        font-size: 12px;
+    }
+
+    /* Carrusel marcas */
+    .brand-slide {
+        flex: 0 0 90px;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .carousel-track {
+        gap: 15px;
+    }
+
+    /* Servicios banner */
+    .services-banner {
+        height: 120px;
+    }
+
+    .services-banner-content h2 {
+        font-size: 24px;
+    }
+
+    /* Sección Nosotros */
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .about-title {
+        font-size: 20px;
+    }
+
+    /* Clientes logos */
+    .clients-logos {
+        gap: 10px;
+    }
+
+    .client-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Formulario */
+    .contact-container {
+        padding: 0 10px;
+    }
+
+    .contact-left,
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-left h2 {
+        font-size: 20px;
+    }
+
+    /* Footer */
+
+    .footer {
+        text-align: center
+    }
+
+    .footer .container {
+        padding: 15px;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+/* Fix para elementos específicos */
+@media (max-width: 480px) {
+    .top-content {
+        gap: 30px;
+    }
+
+    .contact-info {
+        gap: 30px;
+    }
+
+    .contact-info a[href*="whatsapp"] span {
+        font-size: 12px;
+    }
+
+    /* Ajustes adicionales para móviles muy pequeños */
+    .contact-info a span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .services-list li {
+        font-size: 11px;
+    }
+
+    .btn-yellow {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .form-control {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .whatsapp-float {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+/* Ajuste para altura de pantalla */
+@media (max-height: 600px) and (orientation: landscape) {
+    .carousel {
+        height: 200px;
+    }
+
+    .services-banner {
+        height: 100px;
+    }
+}
+
+/* Ajustes para evitar overflow horizontal */
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
 }
